@@ -46,6 +46,7 @@
             </div>
         </nav>
     </header>
+    <!-- posts section  -->
     <main class="main container mx-auto p-3">
         <div id="posts">
         </div>
@@ -58,10 +59,11 @@
         </div>
     </main>
     <hr>
-    <section class="container">
+    <!-- QNA section  -->
+    <section class="container" id="qna">
         <h1 class="text-center">QNA</h1>
         <div>
-            <h3>Q1:How does js work?</h3>
+            <h3>Q1: How does js work?</h3>
             <p class="d-flex w-75">
                 <strong class="px-2">Ans:</strong>
                 <span> As we know javascript is mother of web and it's called       client site language (also it works on
@@ -78,26 +80,28 @@
             </p>
         </div>
         <div>
-            <h3>Q1:what does js event loop do?</h3>
-            <p class="d-flex">
-                <strong>Ans:</strong>
-                <span>As we know JavaScript is a single-threaded synchronous programming language. But some cases it's work like asynchronously programming language. The event loop is the secret behind JavaScript's asynchronous programming. Event loop works on 3 steps.
-                    <br>
-                    1. Call stack
-                    <br>
-                    2. Heap
-                    <br>
-                    3. Queue
-                    <br>
+            <h3>Q2: what does js event loop do?</h3>
+            <p class="d-flex w-75">
+                <strong class="px-2">Ans:</strong>
+                <span>As we know JavaScript is a single-threaded synchronous programming language. But some cases it's work like asynchronously programming language. The event loop is the secret behind JavaScript's asynchronous programming. Event loop works on 3 steps,
+                    
+                    1-Call stack,                    
+                    2-Heap,
+                    3-Queue.
+                    
                 
-                #The JavaScript  executes a script from the top of the file and works its way down. It creates the execution contexts, pushes, and pops functions onto and off the call stack in the execution phase. If a function that takes a long time to complete is called a blocking function. For example, setTimeout/fetch. When call stack get a blocking function it pass the function onto Heap. Heap Data stored randomly and when any function/method done it pass onto Queue. The Queue are stored data sequently and waiting for clear call stack.When call stack is clear Queue send new function to the call stack and call stack execute this. This is how Event Loop works.
+                JavaScript creates the execution contexts, pushes, and pops functions onto and off the call stack in the execution phase. If a function that takes a long time to complete is called a blocking function. For example, setTimeout/fetch. When call stack get a blocking function it pass the function onto Heap. Heap Data stored randomly and when any function/method done it pass onto Queue. The Queue are stored data sequently and waiting for clear call stack.When call stack is clear Queue send new function to the call stack and call stack execute this. This is how Event Loop works.
                 </span>
             </p>
         </div>
         <div>
-            <h3>Q1:difference between local storage and session storage.</h3>
-            <p class="d-flex">
-                <strong>Ans:</strong>
+            <h3>Q3: Difference between local storage and session storage.</h3>
+            <p class="d-flex w-75">
+                <strong class="px-2">Ans:</strong>
+                <span>
+                    local storage and session storage are same thing. But main difference between is localStorage data doesn't expire but session storage data is cleared when the page/session close. They also have some difference like, the local storage can store 5MB/10MB on the other hand session storage can store only 5MB.Also you have to delete local storage data by javascript or manually but session storage data is stored only for the duration of a session. And when the session is closed the data are automaticaly delete from session storage .
+
+                </span>
             </p>
         </div>
     </section>

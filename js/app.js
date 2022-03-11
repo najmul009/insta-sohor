@@ -1,8 +1,9 @@
+//global var diclar
 let posts=[ ];
-
 const likedPostsId = [];
 const reportedPostsId = [];
 
+//common functions
 const getLikedPosts = () => {
     return posts.filter((post) => likedPostsId.includes(post.id));
 };
